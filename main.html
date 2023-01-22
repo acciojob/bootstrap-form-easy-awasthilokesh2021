@@ -9,25 +9,38 @@
 <body>
 	<form class="row g-3">
 		<div class="col-md-5">
-		  <label for="first-name-input" class="form-label"  >First name</label><br>
-		  <input type="text" class="form-control"  id="first-name-input"  required><br>
+		  <label for="first-name-input" class="form-label">First name</label><br>
+		  <input type="text" class="form-control"  id="first-name-input"  required ><br>
+		  <div class="invalid-feedback">
+			First name required 
+		  </div>
 		</div>
+		
 		<div class="col-md-5">
 		  <label for="last-name-input" class="form-label"  >Last name</label><br>
 		  <input type="text" class="form-control"  id="last-name-input" required>
+		  <div class="invalid-feedback">
+			last name required 
+		  </div>
 		</div>
 		<div class="col-md-5">
 		  <label for="email-input" class="form-label">Email Address</label><br>
 		  <div class="input-group">
 			<input type="email" class="form-control"  id="email-input" value="xyz@abc.com"  aria-describedby="inputGroupPrepend2" required>
+			<div class="invalid-feedback">
+				Email required 
+			  </div>
 		  </div>
 		</div>
 		<div class="col-md-4">
 		  <label for="college-input" class="form-label" >Collage</label><br>
 		  <input type="text" class="form-control" id="college-input" required><br>
+		  <div class="invalid-feedback">
+			Please provide a Valid Collage 
+		  </div>
 		</div>
 		<div class="col-md-4">
-		  <label for="grad-year-select" class="form-label">Gaduation year</label><br>
+		  <label for="grad-year-select" class="form-label">Graduation year</label><br>
 		  <select class="form-select" id="grad-year-select" required>
 			<option value="">Choose...</option>
 			<option value="">2020</option>
@@ -35,11 +48,17 @@
 			<option value="">2022</option>
 			<option value="">2023</option>
 		  </select>
+		  <div class="invalid-feedback">
+			Please Select a Valid graduation year
+		  </div>
 		</div>
 		<div class="col-md-4">
 		  <label for="roll-no-input" class="form-label" >Roll No</label>
 		  <br>
 		  <input type="text" class="form-control" id="roll-no-input" required>
+		  <div class="invalid-feedback">
+			Please provid a Valid Roll no
+		  </div>
 		</div>
 		<div class="col-12">
 		  <div class="form-check">
@@ -47,6 +66,9 @@
 			<label class="form-check-label" for="invalidCheck2" >
 			  Agree to terms and conditions
 			</label>
+			<div class="invalid-feedback">
+				Please provid a Valid Roll no
+			  </div>
 		  </div><br>
 		</div>
 		<div class="col-12">
